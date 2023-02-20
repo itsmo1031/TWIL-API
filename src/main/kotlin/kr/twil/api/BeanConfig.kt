@@ -15,5 +15,5 @@ class BeanConfig(val em: EntityManager) {
     }
 
     @Bean
-    fun postService(): PostService = PostService()
+    fun postService(): PostService = PostService(postRepository())
 }
